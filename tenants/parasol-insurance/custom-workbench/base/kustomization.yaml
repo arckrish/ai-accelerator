@@ -5,4 +5,3 @@ resources:
   - custom-workbench-is.yaml
   - custom-workbench-pvc.yaml
   - custom-workbench-notebook.yaml
-  - minio-data-connection.yaml
