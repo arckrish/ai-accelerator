@@ -13,6 +13,6 @@ metadata:
 stringData:
   AWS_ACCESS_KEY_ID: minio
   AWS_S3_BUCKET: pipelines
-  AWS_S3_ENDPOINT: http://minio.ai-example-single-model-serving.svc.cluster.local:9000
+  AWS_S3_ENDPOINT: http://minio.object-datastore.svc.cluster.local:9000
   AWS_SECRET_ACCESS_KEY: minio123
 type: Opaque
