@@ -1,7 +1,8 @@
 kind: Secret
 apiVersion: v1
 metadata:
-  name: aws-connection-tgis
+  name: minio-connection
+  namespace: parasol-insurance
   labels:
     opendatahub.io/dashboard: 'true'
     opendatahub.io/managed: 'true'
@@ -11,7 +12,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "-100"
 stringData:
   AWS_ACCESS_KEY_ID: minio
-  AWS_S3_BUCKET: tgis
+  AWS_S3_BUCKET: pipelines
   AWS_S3_ENDPOINT: http://minio.ai-example-single-model-serving.svc.cluster.local:9000
   AWS_SECRET_ACCESS_KEY: minio123
 type: Opaque
